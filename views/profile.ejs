@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <script></script>
+    <style>
+      * {
+        margin: 2;
+        padding: 0;
+      }
+
+      td {
+        margin: 50;
+        width: 200;
+      }
+      .tt0 {
+        width: 180;
+        height: 20;
+        margin: 3;
+        text-align: right;
+      }
+      .ttl {
+        width: 650;
+        height: 20;
+        margin: 2;
+        text-align: left;
+      }
+      .tt2 {
+        width: 50;
+        height: 20;
+        margin: 2;
+        text-align: center;
+      }
+      .tt3 {
+        width: 80;
+        height: 20;
+        margin: 2;
+        text-align: center;
+      }
+      .tt4 {
+        width: 130;
+        height: 20;
+        margin: 2;
+        text-align: center;
+      }
+      .main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      .bg {
+        background-color: rgb(165, 230, 250);
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <div class="main">
+      <h2>RBAS dashboard 根區塊鏈服務統計</h2>
+      <table class="my-4">
+        <tr>
+          <td>date time</td>
+          <td>
+            <input class="ttl" value=<%= data.d1 %>>
+          </td>
+        </tr>
+        <tr>
+          <td><input class="tt0" value="life cycle" /></td>
+          <td>
+            <input class="ttl" value=<%= data.d2 %>>
+          </td>
+        </tr>
+        <tr>
+          <td><input class="tt0" value="active PS" /></td>
+          <td><input class="ttl" value=<%= data.d3 %> /></td>
+        </tr>
+        <tr>
+          <td><input class="tt0" value="active TS" /></td>
+          <td><input class="ttl" value=<%= data.d4 %> ></td>
+        </tr>
+        <tr>
+          <td><input class="tt0" value="hash in" /></td>
+          <td><input class="ttl" value=<%= data.d5 %> ></td>
+        </tr>
+        <tr>
+          <td><input class="tt0" value="total hash" /></td>
+          <td>
+            <input class="ttl" value=<%= data.d6 %>>
+          </td>
+        </tr>
+        <tr>
+          <td><input class="tt0" value="total query" /></td>
+          <td><input class="ttl" value=<%= data.d7 %>></td>
+        </tr>
+        <tr>
+          <td><input class="tt0" value="database hash" /></td>
+          <td>
+            <input
+              class="ttl"
+              value=<%= data.d8 %>>
+          </td>
+        </tr>
+      </table>
+      <h2>RS real-time status</h2>
+      <table class="table table-stripted table-responsive">
+        <thead>
+          <tr>
+            <th>RS</th>
+            <th>name</th>
+            <th>IP</th>
+            <th>cycle</th>
+            <th>PS_</th>
+            <th>TS_</th>
+            <th>QS_</th>
+            <th>query</th>
+            <th>q_total</th>
+            <th>hash_in</th>
+            <th>hash_total</th>
+            <th>DB_hash</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input class="tt2" value="1" /></td>
+            <td><input class="tt2" value="ASTRI" /></td>
+            <td><input class="tt4" value="192.168.1.101" /></td>
+            <td><input class="tt3" value="123456" /></td>
+            <td><input class="tt2" value="123" /></td>
+            <td><input class="tt2" value="12345" /></td>
+            <td><input class="tt2" value="12" /></td>
+            <td><input class="tt3" value="12345" /></td>
+            <td><input class="tt3" value="123456" /></td>
+            <td><input class="tt3" value="1234567" /></td>
+            <td><input class="tt4" value="1234567890" /></td>
+            <td><input class="tt4" value="1234567890abcdef" /></td>
+          </tr>   
+          <tr>
+            <td><input class="tt2" value="2" /></td>
+            <td><input class="tt2" value="BUPT" /></td>
+            <td><input class="tt4" value="192.168.1.101" /></td>
+            <td><input class="tt3" value="123456" /></td>
+            <td><input class="tt2" value="123" /></td>
+            <td><input class="tt2" value="12345" /></td>
+            <td><input class="tt2" value="12" /></td>
+            <td><input class="tt3" value="12345" /></td>
+            <td><input class="tt3" value="123456" /></td>
+            <td><input class="tt3" value="1234567" /></td>
+            <td><input class="tt4" value="1234567890" /></td>
+            <td><input class="tt4" value="1234567890abcdef" /></td>
+          </tr>         
+          <tr>
+            <td><input class="tt2" value="3" /></td>
+            <td><input class="tt2" value="CAS" /></td>
+            <td><input class="tt4" value="192.168.1.101" /></td>
+            <td><input class="tt3" value="123456" /></td>
+            <td><input class="tt2" value="123" /></td>
+            <td><input class="tt2" value="12345" /></td>
+            <td><input class="tt2" value="12" /></td>
+            <td><input class="tt3" value="12345" /></td>
+            <td><input class="tt3" value="123456" /></td>
+            <td><input class="tt3" value="1234567" /></td>
+            <td><input class="tt4" value="1234567890" /></td>
+            <td><input class="tt4" value="1234567890abcdef" /></td>
+          </tr>
+          <tr>
+            <td><input class="tt2" value="4" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+          </tr>
+          <tr>
+            <td><input class="tt2" value="5" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+          </tr>
+          <tr>
+            <td><input class="tt2" value="6" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+          </tr>
+          <tr>
+            <td><input class="tt2" value="7" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+          </tr>
+          <tr>
+            <td><input class="tt2" value="8" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+          </tr>
+          <tr>
+            <td><input class="tt2" value="9" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt2" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt3" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+            <td><input class="tt4" value="" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
